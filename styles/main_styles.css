@@ -509,150 +509,92 @@ section
 4. Menu
 *********************************/
 
-.menu
-{
-	position: fixed;
-	top: 0;
-	right: -350px;
-	width: 350px;
-	height: 100vh;
-	background: #57ccc3;
-	z-index: 102;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 50px;
+/* Menü */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: #57ccc3;
+    z-index: 102;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
 }
-.menu.active
-{
-	right: 0;
+
+.menu.active {
+    right: 0;
 }
-.menu_overlay
-{
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(255,255,255,0.75);
-	z-index: 101;
-	visibility: hidden;
-	opacity: 0;
+
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
 }
-.menu_overlay.active
-{
-	visibility: visible;
-	opacity: 1;
+
+.menu_overlay.active {
+    visibility: visible;
+    opacity: 1;
 }
-.menu_close_container
-{
-	position: absolute;
+
+.menu_close_container {
+    position: absolute;
     top: 41px;
     left: 28px;
     width: 18px;
     height: 18px;
     transform-origin: center center;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
     cursor: pointer;
     z-index: 1;
 }
-.menu_close
-{
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3D;
-}
-.menu_close div
-{
+
+.menu_close div {
     width: 100%;
     height: 2px;
     background: #FFFFFF;
     top: 8px;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
     transition: all 200ms ease;
 }
-.menu_close div:last-of-type
-{
-    -webkit-transform: rotate(90deg) translateX(-2px);
-    -moz-transform: rotate(90deg) translateX(-2px);
-    -ms-transform: rotate(90deg) translateX(-2px);
-    -o-transform: rotate(90deg) translateX(-2px);
+
+.menu_close div:last-of-type {
     transform: rotate(90deg) translateX(-2px);
-    transform-origin: center;
-}
-.menu_close:hover div
-{
-    background: #1befc5;
-}
-.menu_nav
-{
-	margin-top: 75px;
-}
-.menu_nav ul li:not(:last-child)
-{
-	margin-bottom: 1px;
-}
-.menu_nav ul li a
-{
-	font-size: 24px;
-	font-weight: 500;
-	color: rgba(255,255,255,0.75);
-}
-.menu_nav ul li a:hover
-{
-	color: #1befc5;
-}
-.menu_social
-{
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-}
-.menu_social ul li:hover
-{
-	background: #404040;
-}
-.menu_social ul li:hover a i
-{
-	color: #FFFFFF;
-}
-.menu_extra
-{
-	margin-top: 50px;
-}
-.menu_extra > div:not(:last-child)
-{
-	margin-bottom: 5px;
-}
-.menu_link,
-.menu_link a
-{
-	font-size: 13px;
-	font-weight: 500;
-	color: rgba(255,255,255,0.75);
-}
-.menu_link a:hover
-{
-	color: #FFFFFF;
-}
-/*4.1 alt Menu
-*********************************/
-/* alt açılır menü*/
-/* Dropdown Menü Stili */
-/* Dropdown Parent */
-.dropdown {
-    position: relative; /* Alt menünün konumlandırılması için gerekli */
 }
 
-/* Dropdown Menü */
+.menu_nav {
+    margin-top: 75px;
+}
+
+.menu_nav ul li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.menu_nav ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.menu_nav ul li a:hover {
+    color: #1befc5;
+}
+
+/* Alt Menü (Dropdown) */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
-    display: none; /* Varsayılan olarak gizli */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -660,31 +602,117 @@ section
     border: 1px solid #ddd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    list-style: none;
     padding: 10px 0;
     margin: 0;
     width: 200px;
 }
 
-/* Dropdown Menü Elemanları */
 .dropdown-menu li {
     padding: 10px 20px;
 }
 
 .dropdown-menu li a {
-    text-decoration: none;
     color: black;
     display: block;
+    text-decoration: none;
 }
 
 .dropdown-menu li:hover {
     background-color: #f2f2f2;
 }
 
-/* Dropdown Aktif Olduğunda */
+/* Dropdown menü hover durumunda görünür */
 .dropdown:hover .dropdown-menu {
-    display: block; /* Hover sırasında alt menüyü göster */
+    display: block;
 }
+
+/* Menü Sosyal Bağlantılar */
+.menu_social {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.menu_social ul li:hover {
+    background: #404040;
+}
+
+.menu_social ul li:hover a i {
+    color: #FFFFFF;
+}
+
+/* Ekstra Menü Linkleri */
+.menu_extra {
+    margin-top: 50px;
+}
+
+.menu_extra > div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.menu_link,
+.menu_link a {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.menu_link a:hover {
+    color: #FFFFFF;
+}
+
+/* Hamburger Menü (Mobil Ekranlar İçin) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    border: solid 1px transparent;
+    border-radius: 7px;
+    transition: all 200ms ease;
+}
+
+.hamburger:hover {
+    border: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+.hamburger i {
+    font-size: 20px;
+    color: #404040;
+    padding: 5px 7px;
+}
+
+/* Mobil Menü */
+@media (max-width: 768px) {
+    .menu_nav ul {
+        display: none; /* Mobilde ana menüyü gizle */
+    }
+
+    .menu.active .menu_nav ul {
+        display: block; /* Menü açıldığında göster */
+    }
+
+    .hamburger {
+        display: block; /* Hamburger menüsü yalnızca mobilde görünsün */
+    }
+
+    .menu_nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Alt Menü (Dropdown) Mobilde Görünür Yapma */
+    .dropdown-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        background-color: #57ccc3;
+        box-shadow: none;
+    }
+
+    .dropdown-menu li {
+        padding: 10px 20px;
+    }
+}
+
 
 /*********************************
 5. Home
