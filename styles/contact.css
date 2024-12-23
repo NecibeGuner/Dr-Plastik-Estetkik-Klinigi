@@ -713,14 +713,12 @@ section
 6. Contact
 *********************************/
 
-.contact
-{
+.contact {
 	background: #FFFFFF;
 	padding-top: 51px;
 	padding-bottom: 90px;
 }
-.contact_form_container
-{
+.contact_form_container {
 	width: 100%;
 	background: #FFFFFF;
 	padding-left: 33px;
@@ -729,8 +727,7 @@ section
 	padding-top: 136px;
 	box-shadow: 0px 25px 38px rgba(0,0,0,0.2);
 }
-.contact_form_title
-{
+.contact_form_title {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -743,12 +740,10 @@ section
 	font-weight: 600;
 	color: #FFFFFF;
 }
-.contact_form
-{
+.contact_form {
 	width: 100%;
 }
-.contact_input
-{
+.contact_input {
 	width: calc((100% - 15px) / 2);
 	height: 62px;
 	background: transparent;
@@ -765,8 +760,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.contact_select
-{
+.contact_select {
 	-webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -780,59 +774,50 @@ section
 	color: #a09f9f !important;
 	cursor: pointer;
 }
-.contact_select.selected
-{
+.contact_select.selected {
 	font-size: 15px !important;
 	color: #404040 !important;
 	font-weight: 500 !important;
 	font-style: normal !important;
 }
-.contact_select option
-{
+.contact_select option {
 	color: #404040;
 }
 .contact_input:focus,
-.contact_input:hover
-{
+.contact_input:hover {
 	border: solid 2px #57ccc3;
 }
-.contact_input::-webkit-input-placeholder
-{
+.contact_input::-webkit-input-placeholder {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #a09f9f !important;
 }
-.contact_input:-moz-placeholder
-{
+.contact_input:-moz-placeholder {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #a09f9f !important;
 }
-.contact_input::-moz-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #a09f9f !important;
-} 
-.contact_input:-ms-input-placeholder
-{ 
+.contact_input::-moz-placeholder {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #a09f9f !important;
 }
-.contact_input::input-placeholder
-{
+.contact_input:-ms-input-placeholder { 
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	font-style: italic;
 	color: #a09f9f !important;
 }
-.contact_button
-{
+.contact_input::input-placeholder {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #a09f9f !important;
+}
+.contact_button {
 	width: 100%;
 	font-size: 14px;
 	font-weight: 700;
@@ -842,34 +827,29 @@ section
 	cursor: pointer;
 	margin-top: 24px;
 }
-.contact_button:hover
-{
+.contact_button:hover {
 	background: transparent;
 	border: solid 2px #fd556d;
 	color: #fd556d;
 }
-.contact_content_title
-{
+.contact_content_title {
 	font-size: 30px;
 	font-weight: 600;
 	color: #404040;
 	line-height: 1.2;
 	margin-top: 32px;
 }
-.contact_content_text
-{
+.contact_content_text {
 	margin-top: 21px;
 }
-.direct_line
-{
+.direct_line {
 	width: 100%;
 	height: 48px;
 	border-radius: 24px;
 	overflow: hidden;
 	margin-top: 31px;
 }
-.direct_line_title
-{
+.direct_line_title {
 	width: 130px;
 	height: 100%;
 	font-size: 16px;
@@ -879,8 +859,7 @@ section
 	background-color: #fd556d;
 	white-space: nowrap;
 }
-.direct_line_num
-{
+.direct_line_num {
 	width: calc(100% - 130px);
 	height: 100%;
 	font-size: 30px;
@@ -890,40 +869,33 @@ section
 	background: #57ccc3;
 	white-space: nowrap;
 }
-.contact_info
-{
+.contact_info {
 	margin-top: 50px;
 }
-.contact_info ul li:not(:last-child)
-{
+.contact_info ul li:not(:last-child) {
 	margin-bottom: 24px;
 }
-.contact_info ul li > div:first-of-type
-{
+.contact_info ul li > div:first-of-type {
 	width: 90px;
 	font-size: 18px;
 	font-weight: 600;
 	color: #57ccc3;
 	line-height: 1.34;
 }
-.contact_info ul li > div:last-of-type
-{
+.contact_info ul li > div:last-of-type {
 	max-width: 170px;
 	font-size: 15px;
 	font-weight: 600;
 	color: #878787;
 	line-height: 1.6;
 }
-.contact_social
-{
+.contact_social {
 	margin-top: 43px;
 }
-.contact_social ul li:not(:last-of-type)
-{
+.contact_social ul li:not(:last-of-type) {
 	margin-right: 22px;
 }
-.contact_social ul li a i
-{
+.contact_social ul li a i {
 	color: #404040;
 	padding: 5px;
 	-webkit-transition: all 200ms ease;
@@ -932,38 +904,105 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.contact_social ul li a i:hover
-{
+.contact_social ul li a i:hover {
 	color: #57ccc3;
 }
-.google_map_row
-{
+.google_map_row {
 	margin-top: 90px;
 }
-.contact_map
-{
+.contact_map {
 	width: 100%;
 }
-.map
-{
+.map {
 	width: 100%;
 }
-.google_map
-{
+.google_map {
 	width: 100%;
 	height: 570px;
 }
-.map_container
-{
+.map_container {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
-#map
-{
+#map {
 	width: 100%;
 	height: calc(100% + 30px);
 }
+
+/* Adresler için özel düzenleme */
+.address-container {
+    display: flex; /* Yan yana düzen */
+    gap: 20px; /* Adresler arası boşluk */
+    justify-content: space-between; /* Adresleri eşit şekilde dağıt */
+    flex-wrap: wrap; /* Ekran daralınca alt alta geçmelerini sağla */
+}
+
+.address {
+    flex: 1; /* Eşit genişlik */
+    padding: 10px; /* İç boşluk */
+    border: 1px solid #e6ebf1; /* Kenarlık isteğe bağlı */
+    box-sizing: border-box; /* Padding dahil genişlik */
+}
+
+.address li div {
+    margin-bottom: 5px; /* İçerik arası boşluk */
+    font-size: 15px; /* Yazı boyutu */
+    color: #404040; /* Yazı rengi */
+}
+.contact_form {
+    display: flex; /* Tüm elemanları düzenlemek için */
+    flex-direction: column; /* Alt alta sıralama */
+    align-items: stretch; /* Tüm elemanları tam genişlet */
+    gap: 20px; /* Elemanlar arasına boşluk ekle */
+}
+
+.contact_input, .comment_input {
+    width: 100%; /* Genişliği tam yap */
+    height: 50px; /* Varsayılan yükseklik */
+    padding: 10px; /* İç boşluk */
+    border: 2px solid #e6ebf1; /* Kenarlık */
+    border-radius: 5px; /* Köşeleri yuvarlat */
+    font-size: 15px; /* Yazı boyutu */
+    box-sizing: border-box; /* İç boşluk genişlik hesabına dahil */
+    outline: none; /* Odak çizgisini kaldır */
+    transition: all 0.3s ease; /* Hover ve focus için geçiş animasyonu */
+}
+
+.contact_input:focus, .comment_input:focus {
+    border-color: #57ccc3; /* Odaklanıldığında renk değişimi */
+    box-shadow: 0 0 5px rgba(87, 204, 195, 0.5); /* Hafif gölge */
+}
+
+.comment_input {
+    height: 150px; /* "Yorumunuz" için özel yükseklik */
+    resize: none; /* Kullanıcı tarafından yeniden boyutlandırmayı engelle */
+}
+
+.contact_button {
+    width: 100%; /* Tam genişlik */
+    height: 50px; /* Yükseklik */
+    font-size: 16px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: white; /* Beyaz yazı */
+    background-color: #fd556d; /* Arka plan rengi */
+    border: none; /* Kenarlık kaldır */
+    border-radius: 5px; /* Hafif yuvarlatılmış köşeler */
+    cursor: pointer; /* Tıklanabilir imleç */
+    transition: background-color 0.3s ease; /* Arka plan geçişi */
+}
+
+.contact_button:hover {
+    background-color: #e04a60; /* Hover durumunda farklı bir kırmızı */
+}
+
+.contact_form_title {
+    margin-bottom: 20px; /* Başlık ve form arasında boşluk */
+    font-size: 24px; /* Başlık yazı boyutu */
+    text-align: center; /* Ortala */
+    color: #404040; /* Başlık rengi */
+}
+
 
 /*********************************
 7. Newsletter
